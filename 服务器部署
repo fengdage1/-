@@ -1,0 +1,9 @@
+#ubuntu14.04
+
+#安装python3.6
+apt-get install software-properties-common
+add-apt-repository ppa:jonathonf/python-3.6
+apt-get update
+apt-get install python3.6
+#安装php3
+apt-get install python3-pip
