@@ -16,3 +16,8 @@ apt-get install php-pear
 apt-get install php7.1-dev
 apt-get install -y autoconf g++ make openssl libssl-dev libcurl4-openssl-dev
 apt-get install nginx
+#mysql 5.7
+wget https://dev.mysql.com/get/mysql-apt-config_0.8.1-1_all.deb
+dpkg -i mysql-apt-config_0.8.1-1_all.deb
+apt-get update
+apt-get install mysql-server mysql-client
