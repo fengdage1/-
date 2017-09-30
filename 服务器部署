@@ -23,7 +23,7 @@ apt-get update
 apt-get install mysql-server mysql-client
 
 #php7扩展
-apt-get install php7.1-mbstring
 apt-get install php7.1-mysql
 apt-get install php7.1-mongodb
 apt-get install php7.1-redis
+apt-get install php7.1-mbstring
