@@ -1,5 +1,7 @@
 #ubuntu14.04
 
+apt-get update
+
 #安装python3.6
 apt-get install software-properties-common
 add-apt-repository ppa:jonathonf/python-3.6
@@ -26,3 +28,24 @@ apt-get install php7.1-mysql
 apt-get install php7.1-mongodb
 apt-get install php7.1-redis
 apt-get install php7.1-mbstring
+
+----------------------------------------------------------------------------------------------------------------
+#git
+apt-get install git
+
+#mysql5.7允许远程连接
+修改/etc/mysql/mysql.conf.d,注释bind-address   = 127.0.0.1
+连接到本地数据库后
+use mysql
+GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '333221abc' WITH GRANT OPTION;
+flush privileges;
+
+#python3 安装各种扩展
+apt-get install libxml2-dev libxslt1-dev python-dev python3-dev
+apt-get install zlib1g-dev
+apt-get install libevent-dev
+pip3 install psutil
+pip3 install pymysql
+pip3 install gevent
+pip3 install selenium
+pip3 isntall bs4
