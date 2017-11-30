@@ -49,3 +49,29 @@ pip3 install pymysql
 pip3 install gevent
 pip3 install selenium
 pip3 isntall bs4
+
+
+##########################################
+#CentOs 7 
+#########################################
+#安装python3
+yum install epel-release
+yum install python34
+#安装依赖
+yum install openssl-devel
+yum install zlib-devel
+yum install python-devel
+yum install python34-devel
+yum install libevent-devel
+yum install blas-devel lapack-devel
+yum install gcc
+yum install g++
+#安装pip3
+yum install python34-setuptools
+easy_install-3.4 pip
+#安装扩展
+pip3 install psutil
+pip3 install pymysql
+pip3 install gevent
+pip3 install selenium
+pip3 install bs4
